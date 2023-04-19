@@ -2,15 +2,15 @@ import random
 userinput = input("Rock, Paper, or Scissors?")
 computerinput = random.randint(1, 3)
 
-if computerinput == 1:
-  computerinput = "Rock"
-  print("I choose", computerinput)
-elif computerinput == 2:
-  computerinput = "Paper"
-  print("I choose", computerinput)
-else:
-  computerinput = "Scissors"
-  print("I choose", computerinput)
+match(computerinput):
+  case 1:
+    computerinput = "Rock"
+  
+  case 2:
+    computerinput = "Paper"
+    
+  case 3:
+    computerinput = "Scissors"
   
 if computerinput == userinput:
   print("We had a tie.")
